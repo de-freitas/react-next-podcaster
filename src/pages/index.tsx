@@ -183,7 +183,7 @@ export const getStaticProps: GetStaticProps = async () => {
   // })
   // --- para contornar o erro, foi utilizado o método FETCH --- 
 
-  const homeParameters = `episodes?_limit=12&_sort=published_at&_order=desc`
+  const homeParameters = `/episodes?_limit=12&_sort=published_at&_order=desc`
 
   const data = await api(homeParameters)
 
